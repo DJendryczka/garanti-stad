@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Garanti-Städ i Lund AB</title>
   </head>
@@ -10,31 +13,70 @@
     <div class="empty">
 
     </div>
-    <nav>
-      
-      <ul class="nav-links">
-        <li><a href="#">Hem</a></li>
-        <li><a href="#about">Om Oss</a></li>
-        <li><a href="#services">Tjänster</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
-      <div class="hamburger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </nav>
-    <section class="logo">
+    <div class="logo">
+      <img src="/images/logo.webp" alt="Logo" width="80" height="50">
+     </div>
+    <main id="home">
+      <nav id="navbar" class="not-scrolled">
         
-    </section>
-    <section class="splash">
-       <h1>Welcome</h1>
-    </section>
-    <section class="why-us">
-     
-    </section>
-    <section class="about">
-     
-    </section>
+        <ul class="nav-links">
+          <li><a  href="/">HEM</a></li>
+          <li><a href="#why-us">VARFÖR OSS</a></li>
+          <li><a href="#services">TJÄNSTER</a></li>
+          <li><a href="#services">PRODUCTER</a></li>
+          <li><a href="#services">MILJÖ</a></li>
+          <li><a href="#services">NYHETER</a></li>
+          <li><a href="#">KONTAKT</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      <section class="splash">
+         <div class="background">
+            <img src="/images/blue-sky-1348634_1920.jpg" alt="tree">
+         </div>
+         
+         <div class="splash-text">
+            <h2>Välkommen</h2>
+            <h1>Garanti-Städ i Lund AB</h1>
+            <p>garanterad hög kvalitet</p>
+         </div>
+      </section>
+      <section class="why-us" id="why-us">
+        <div class="container">
+          <h2>Varför välja oss?</h2>
+          <div class="card">
+            <img src="/images/quality.webp" alt="Quality" />
+            <h3>Hög kvalitet</h3>
+            <p>
+              Vi garanterar hög kvalitet på våra tjänster och produkter.
+            </p>
+          </div>
+          <div class="card">
+            <img src="/images/price.webp" alt="Price" />
+            <h3>Bra priser</h3>
+            <p>
+              Vi erbjuder konkurrenskraftiga priser på våra tjänster och
+              produkter.
+            </p>
+          </div>
+          <div class="card">
+            <img src="/images/customer-service.webp" alt="Customer Service" />
+            <h3>Bra kundservice</h3>
+            <p>
+              Vi har en kundservice som alltid är redo att hjälpa dig med dina
+              frågor.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+       
+      </section>
+    </main>
   </body>
+  <script src="script.js"></script>
 </html>
