@@ -55,6 +55,12 @@ document.addEventListener('DOMContentLoaded', function() {
     showSlide(currentIndex); // Show the first slide initially
 });
 
+document.querySelectorAll('.flip-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      card.classList.toggle('flipped');
+    });
+  });
+
 const navSlide = () => {
     const burger = document.querySelector('.hamburger');
     const nav = document.querySelector('.nav-links');

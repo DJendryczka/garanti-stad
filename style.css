@@ -16,6 +16,12 @@ main {
   scroll-behavior: smooth;
 }
 
+/* Helpers */
+
+.bg-white {
+  background-color: white;
+}
+
 /* Topografy */
 
 h1 {
@@ -375,6 +381,8 @@ nav a {
 
 }
 
+/* About us */
+
 .content-wrapper {
   width: 100%;
   background-color: #999999;
@@ -385,7 +393,6 @@ nav a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 1560px;
   max-width: 1560px;
   margin: 0 auto;
   padding: 0 2rem;
@@ -485,4 +492,78 @@ button.next {
   .about-text p {
     margin-right: 0;
   }
+}
+
+/* Services */
+
+.content-wrapper-services {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.services-container {
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.services-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.flip-card {
+  width: 440px;
+  height: 400px;
+  perspective: 1000px; /* Provides a 3D space for the transformation */
+  margin: 10px; /* Just for spacing */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d; /* Ensures children (front/back) are positioned in 3D space */
+  cursor: pointer;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg); /* Flips the card */
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hides the back of the face when rotated */
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg); /* Orient the back face opposite to the front */
+}
+
+.flip-card h2 {
+  padding: 1rem;
+  font-size: 2rem;
 }
