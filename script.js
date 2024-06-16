@@ -14,6 +14,47 @@ main.addEventListener('scroll', function() {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    let slides = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+    const intervalTime = 3000; // Interval time in milliseconds
+
+    function showSlide(index) {
+        slides.forEach((slide, idx) => {
+            slide.style.display = 'none';
+            slide.classList.remove('active');
+        });
+        slides[index].style.display = 'block';
+        slides[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    let slideInterval = setInterval(nextSlide, intervalTime);
+
+    document.querySelector('.prev').addEventListener('click', function() {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+        showSlide(currentIndex);
+        resetInterval();
+    });
+
+    document.querySelector('.next').addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+        resetInterval();
+    });
+
+    function resetInterval() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, intervalTime);
+    }
+
+    showSlide(currentIndex); // Show the first slide initially
+});
+
 const navSlide = () => {
     const burger = document.querySelector('.hamburger');
     const nav = document.querySelector('.nav-links');
