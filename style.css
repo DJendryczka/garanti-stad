@@ -84,7 +84,7 @@ nav {
 .logo {
   position: absolute;
   left: 2rem;
-  top: 9px;
+  top: 7px;
   z-index: 1040;
 }
 
@@ -243,7 +243,7 @@ nav a {
 .background {
   width: auto;
   position: absolute;
-  height:139vh;
+  height:142vh;
   transform: translateZ(-10px) scale(2.06);
 }
 
