@@ -607,19 +607,19 @@ button.next {
 }
 
 .stairs {
-  background-image: url("/images/stairs.webp");
+  background-image: url("images/stairs.webp");
 }
 
 .office {
-  background-image: url("/images/office.webp");
+  background-image: url("images/office.webp");
 }
 
 .floor {
-  background-image: url("/images/floor.webp");
+  background-image: url("images/floor.webp");
 }
 
 .windows {
-  background-image: url("/images/windows.webp");
+  background-image: url("images/windows.webp");
 }
 
 .front {
