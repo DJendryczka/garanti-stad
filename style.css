@@ -331,6 +331,10 @@ nav a {
 .ps-7 {
   padding-left: 43px;
 }
+
+.mt-6 {
+  margin-top: 3rem;
+}
 /* Why us */
 
 .why-us {
@@ -712,4 +716,83 @@ button.next {
   .product-container {
     padding: 2rem 1rem;
   }
+}
+
+/* Environment */
+
+.environment {
+  width: 100%;
+  background-image: url("images/pexels-mali-142497.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.environment-container {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  background-color: rgba(23, 80, 36, 0.432);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  margin-top:  3rem;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+}
+
+.environment-container p, ol {
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  margin-right: 3rem;
+  font-weight: 300;
+}
+
+.text {
+  flex: 1 1 50%;
+  padding: 1rem;
+}
+
+.text ol {
+  margin-top: 16px;
+}
+
+/* Footer */
+
+footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  height: 20dvh;
+}
+footer p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  flex: 1 1 30%;
+  padding: 1rem;
 }
